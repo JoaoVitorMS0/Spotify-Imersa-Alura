@@ -169,3 +169,47 @@ body{
     margin: 8px;
     padding: 8px;
 }
+
+.footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    padding: 15px 30px;
+    justify-content: space-between;
+    font-family: "Dm Sans", sans-serif;
+}
+
+.footer .footer__content {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.footer__content .title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer__content .subtitle {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer__button {
+    font-size: 13px;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 0;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
