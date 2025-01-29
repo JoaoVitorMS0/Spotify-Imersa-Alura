@@ -14,7 +14,7 @@
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
-    background-color: #121212;
+    background-color: var(--bgcolor-all);
 }
 
 .header__navigation .navigation {
@@ -52,7 +52,7 @@
     width: 364px;
     height: 48px;
     margin-left: 8px;
-    background-color: #242424;
+    background-color: #112d1d;
     border-radius: 500px;
     border: 1px solid transparent;
 }
@@ -74,29 +74,65 @@
     outline: none;
 }
 
+.header__search #search-input::placeholder {
+    color: #49cb74;
+}
+
 .header__login .subscribe {
     color: #a7a7a7;
     font-size: 16px;
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.header__login .subscribe:hover {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
+    color: #000;
+    background: linear-gradient(90deg, #1DB954, #1ed760);
+    border-radius: 40px;
 }
 
 .header__login .login {
     width: 100px;
     height: 48px;
     color: #000;
+    background-color: var(--color-text);
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.header__login .login:hover {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
+    background: linear-gradient(90deg, #1DB954, #1ed760);
 }
 
 .playlist-container {
     background-color: var(--bgcolor-all);
-    padding: 40px;
-    margin-left: 10px;
-    width: 830px;
-    border-radius: 8px;
-    height: 100vh;
+    padding-top: 16px;
+    margin: 10px;
+    margin-inline: 10px;
+    border-radius: 10px;
+    height: 68vh;
 }
 
+.playlist {
+    margin: 24px;
+}
+
+.playlist #greeting-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.playlist .greeting-subtitle {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}

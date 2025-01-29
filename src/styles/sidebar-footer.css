@@ -17,13 +17,13 @@ body{
 }
 
 .sidebar__navigation{
-    background-color: #121212;
+    background-color: #1E392A;
     border-radius:8px;
     padding:16px 0 0 16px;
 }
 
 .logo{
-    background: #121212;
+    background: #1E392A;
     display:flex;
     border-radius:8px ;
     padding:16px 0 0 16px;
@@ -47,7 +47,7 @@ body{
 }
 
 .sidebar nav ul li a{
-    color: #b3b3b3;
+    color: #50C878;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
@@ -55,13 +55,13 @@ body{
 
 
 .library{
-    background-color:#121212;
+    background-color: #1E392A;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 4px 8px;
-    color: #b3b3b3;
+    color: var(--color-text);
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
@@ -75,7 +75,7 @@ body{
 .library .library__button{
     display: flex;
     margin-right: 10px;
-    color: #b3b3b3;
+    color: var(--color-text);
     background-color: transparent;
     border: 0px;
     font-size: 16px;
@@ -89,13 +89,21 @@ body{
 .library .library__button .fa{
     font-size: 20px;
     font-weight: 300;
-    color: #b3b3b3;
+    color: var(--color-text);
     margin-right: 10px;
     padding-right: 8px;
 }
 
 .library .library__content .fa-plus{
     margin: 24px 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.library .library__content .fa-plus:hover {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
 }
 
 .section-playlist {
@@ -103,8 +111,8 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
-    background-color: #242424;
-    color: #b3b3b3;
+    background-color: #2b523d;
+    color: var(--color-text);
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0;
@@ -119,7 +127,7 @@ body{
 
 .section-playlist__content .text{
     padding-bottom: 14px;
-    color: #fff;
+    color: var(--color-text);
 }
 
 .section-playlist__content .title {
@@ -129,12 +137,13 @@ body{
 .section-playlist__content .subtitle {
     font-weight: 500;
     font-size: 12px;
+    color: #44b96b;
 }
 
 .section-playlist__content .section-playlist__button {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--color-text);
     color: #000;
     border-radius: 20px;
     font-size: 12px;
@@ -145,6 +154,14 @@ body{
     margin-top: 12px;
     border: 0;
     width: 113px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.section-playlist__content .section-playlist__button:hover {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
+    background: linear-gradient(90deg, #1DB954, #1ed760);
 }
 
 .sidebar .cookies {
@@ -168,12 +185,20 @@ body{
     background-color: transparent;
     border: 1px solid #878787;
     border-radius: 20px;
-    color: #fff;
+    color: var(--color-text);
     font-weight: bold;
     cursor: pointer;
     width: 170px;
     margin: 8px;
     padding: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.languages .languages__button:hover {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.5);
+    color: #146830;
+    background: linear-gradient(90deg, #1DB954, #1ed760);
 }
 
 .footer {
@@ -183,7 +208,7 @@ body{
     width: 100%;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, #af2896, #509bf5);
+    background: linear-gradient(to right, #1E392A, #2F6D50, #50C878);
     padding: 15px 30px;
     justify-content: space-between;
 }
@@ -218,4 +243,12 @@ body{
     padding: 10px;
     cursor: pointer;
     flex-shrink: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #000;
+    position: relative;
+}
+
+.footer__button:hover {
+    box-shadow: 0 0 15px rgba(26, 111, 56, 0.8);
 }
