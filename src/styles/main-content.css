@@ -90,3 +90,13 @@
     font-weight: 700;
     border-radius: 40px;
 }
+
+.playlist-container {
+    background-color: var(--bgcolor-all);
+    padding: 40px;
+    margin-left: 10px;
+    width: 830px;
+    border-radius: 8px;
+    height: 100vh;
+}
+
